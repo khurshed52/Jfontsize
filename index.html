@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Font Size</title>
+<meta name="description" content="font size"
+  
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/jfontsize.css" />
+</head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.jfontsize-1.0.js"></script>
+
+<body>
+<div id="wraper">
+<div id="conteudo">
+<div id="principal">
+
+<h3>Defining the change size and the maximum clicks</h3>
+<div class="box"> <a class="jfontsize-button" id="jfontsize-m2" href="#">A-</a> <a class="jfontsize-button" id="jfontsize-d2" href="#">A</a> <a class="jfontsize-button" id="jfontsize-p2" href="#">A+</a>
+<p class="some-class-name2">This text will be resized</p>
+<script type="text/javascript" language="javascript">
+                        $('.some-class-name2').jfontsize({
+                            btnMinusClasseId: '#jfontsize-m2',
+                            btnDefaultClasseId: '#jfontsize-d2',
+                            btnPlusClasseId: '#jfontsize-p2',
+                            btnMinusMaxHits: 2,
+                            btnPlusMaxHits: 3,
+                            sizeChange: 1
+                        });
+                    </script> 
+</div>
+</div>
+</div>
+</body>
+</html>
